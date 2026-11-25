@@ -212,10 +212,8 @@ namespace QMP6988
     {
         if (configuredBus < 1) return true;
 
-        return sendSensorDiscovery(
-                   "QMP6988 Temperature", EC_NONE, "temperature", "°C")
-            && sendSensorDiscovery(
-                   "QMP6988 Pressure", EC_NONE, "pressure", "hPa");
+        return sendSensorDiscovery("QMP6988 Temperature", EC_NONE, "temperature", "°C")
+            && sendSensorDiscovery("QMP6988 Pressure", EC_NONE, "pressure", "hPa");
     }
 }
 
