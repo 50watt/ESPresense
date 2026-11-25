@@ -502,6 +502,26 @@
             </label>
             </p>
         </div>
+        <h4>QMP6988 - Barometric Pressure + Temperature Sensor:</h4>
+        <div class="mb-4 flex items-end gap-4">
+            <p class="mb-0 min-w-0 flex-1">
+            <label>
+                I2C Bus:<br />
+                <select name="QMP6988_I2c_Bus" bind:value={$hardwareSettings.values['QMP6988_I2c_Bus']}>
+                    <option value="0">None</option>
+                    <option value="1">Bus 1</option>
+                    <option value="2">Bus 2</option>
+                </select>
+            </label>
+            </p>
+            <p class="mb-0 min-w-0 flex-1">
+            <label>
+                I2C address:<br />
+                <input name="QMP6988_I2c" placeholder="0x70 or 0x56 (optional)"
+                    bind:value={$hardwareSettings.values['QMP6988_I2c']}/>
+            </label>
+            </p>
+        </div>
         <h4>SHTC1/3, SHTW1/2, SHT2x/3x/4x, SHT85, HTU21D, Si7021 (GY-21) - Temperature and Humidity Sensor:</h4>
         <p>
             <label>
