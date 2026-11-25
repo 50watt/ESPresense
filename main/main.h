@@ -39,6 +39,7 @@
 #include "BME280.h"
 #include "BMP180.h"
 #include "BMP280.h"
+#include "QMP6988.h"
 #include "DHT.h"
 #include "DS18B20Sensor.h"
 #include "HX711.h"
